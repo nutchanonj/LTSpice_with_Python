@@ -1,0 +1,15 @@
+* FF corner
+.PARAM
+*1.8V core NMOS
++DTOX_N18      = -1.0E-10     DXL_N18       = -1.0E-8      DXW_N18       = 2.2E-8
++DVTH_N18      = -0.04        DCJ_N18       = -4.84E-5     DCJSW_N18     = -3.975E-12
++DCJSWG_N18    = -2.09E-11    DCGDO_N18     = 1.85E-11     DCGSO_N18     = 1.85E-11
++DPVTH0_N18    = -3e-15
+*1.8V core PMOS
++DTOX_P18      = -1.0E-10     DXL_P18       = -1.0E-8      DXW_P18       = 2.2E-8
++DVTH_P18      = 0.02         DCJ_P18       = -5.35E-5     DCJSW_P18     = -4.945E-12
++DCJSWG_P18    = -2.535E-11   DCGDO_P18     = 2.1E-11      DCGSO_P18     = 2.1E-11
++DPVTH0_P18    = 1e-15
+.INC 'cmos018.mdl'
+
+

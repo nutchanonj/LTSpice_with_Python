@@ -1,0 +1,12 @@
+* C:\Users\nutch\MEGA\_Studying\Intern Work\LT_Simulation\Char_NMOS_Vth_kn\N018_Char.asc
+Vgs N002 0 1
+Vds N001 0 5 Rser=10
+M1 N001 N002 0 0 N018 l=0.5u w={X}
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\nutch\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.include cmos018_TT.lib
+.dc Vgs 0 3 0.002
+.step param X 10u 50u 10u
+.backanno
+.end

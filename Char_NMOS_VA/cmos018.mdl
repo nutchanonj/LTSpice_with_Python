@@ -1,0 +1,173 @@
+***********************************************************************************
+*                              1.8V CORE NMOS MODEL                               *
+***********************************************************************************
+.model N018 nmos
++LEVEL    = 49
+*
+* GENERAL PARAMETERS
+*
++CALCACM  = 1
++LMIN     = 1.5E-7              LMAX     = 1.0E-5              WMIN     = 1.9E-7
++WMAX     = 1.0E-4              TNOM     = 25.0                VERSION  = 3.24
++TOX      = '3.87E-09+DTOX_N18' TOXM     = 3.87E-09            XJ       = 1.6000000E-07
++NCH      = 3.8694000E+17       LLN      = 1.1205959           LWN      = 0.9200000
++WLN      = 1.0599999           WWN      = 0.8768474           LINT     = 1.5757085E-08
++LL       = 2.6352781E-16       LW       = -2.2625584E-16      LWL      = -2.0576711E-22
++WINT     = -1.4450482E-09      WL       = -2.3664573E-16      WW       = -3.6409690E-14
++WWL      = -4.0000000E-21      MOBMOD   = 1                   BINUNIT  = 2
++XL       = '1.8E-8+DXL_N18'    XW       = '0.00+DXW_N18'      DWG      = -5.9600000E-09
++DWB      = 4.5000000E-09
+* DIODE PARAMETERS
++ACM      = 12                  LDIF     = 7.00E-08            HDIF     = 2.00E-07
++RSH      = 7.08                RD       = 0                   RS       = 0
++RSC      = 1.7                 RDC      = 1.7
+*
+* THRESHOLD VOLTAGE PARAMETERS
+*
++VTH0     = '0.39+DVTH_N18'     WVTH0    = -2.9709472E-08      PVTH0    = '5.0000000E-16+DPVTH0_N18'
++K1       = 0.6801043           WK1      = -2.4896840E-08      PK1      = 1.3000000E-15
++K2       = -4.9977830E-02      K3       = 10.0000000          DVT0     = 1.3000000
++DVT1     = 0.5771635           DVT2     = -0.1717554          DVT0W    = 0.00
++DVT1W    = 0.00                DVT2W    = 0.00                NLX      = 7.5451030E-08
++W0       = 5.5820150E-07       K3B      = -3.0000000
+*
+* MOBILITY PARAMETERS
+*
++VSAT     = 8.2500000E+04       PVSAT    = -8.3000000E-10      UA       = -1.0300000E-09
++LUA      = 7.7349790E-19       PUA      = -1.0000000E-24      UB       = 2.3666682E-18
++UC       = 1.2000000E-10       PUC      = 1.5000000E-24       RDSW     = 55.5497200
++PRWB     = -0.2400000          PRWG     = 0.4000000           WR       = 1.0000000
++U0       = 3.4000000E-02       LU0      = 2.3057663E-11       WU0      = -3.1009695E-09
++A0       = 0.8300000           KETA     = -3.0000000E-03      LKETA    = -1.7000000E-09
++A1       = 0.00                A2       = 0.9900000           AGS      = 0.3200000
++B0       = 6.0000000E-08       B1       = 0.00
+*
+* SUBTHRESHOLD CURRENT PARAMETERS
+*
++VOFF     = -0.1030000          LVOFF    = -3.3000000E-09      NFACTOR  = 1.2500000
++LNFACTOR = 4.5000000E-08       CIT      = 0.00                CDSC     = 0.00
++CDSCB    = 0.00                CDSCD    = 1.0000000E-04       ETA0     = 2.8000001E-02
++ETAB     = -2.7000001E-02      DSUB     = 0.4000000
+*
+* ROUT PARAMETERS
+*
++PCLM     = 1.2000000           PPCLM    = 2.9999999E-15       PDIBLC1  = 2.5000000E-02
++PDIBLC2  = 3.8000000E-03       PPDIBLC2 = 2.7000001E-16       PDIBLCB  = 0.00
++DROUT    = 0.5600000           PSCBE1   = 3.4500000E+08       PSCBE2   = 1.0000000E-06
++PVAG     = 0.00                DELTA    = 1.0000000E-02       ALPHA0   = 1.7753978E-08
++ALPHA1   = 0.1764000           LALPHA1  = 7.6250000E-09       BETA0    = 11.1683940
+*
+* TEMPERATURE EFFECTS PARAMETERS
+*
++KT1      = -0.2572866          KT2      = -4.0000000E-02      AT       = 3.7000000E+04
++PAT      = -7.5000000E-10      UTE      = -1.5500000          UA1      = 1.7600000E-09
++LUA1     = 6.0000000E-18       WUA1     = -1.1000000E-16      PUA1     = -5.0000000E-25
++UB1      = -2.4000000E-18      UC1      = -1.0000000E-10      LUC1     = 1.6999999E-17
++PUC1     = -3.0000000E-24      KT1L     = -1.0000000E-09      PRT      = -55.0000000
+*
+* NOISE PARAMETERS
+*
++NOIMOD   = 2                   NOIA     = 8.2282E+19            NOIB     = 1.3327E+04
++NOIC     = -2.4937E-14         EM       = 1.7767E+07            EF       = 8.1800E-01
+*
+* CAPACITANCE PARAMETERS
+*
++CJ       = '9.68E-04+DCJ_N18'     MJ       = 0.346                PB       = 0.7
++CJSW     = '7.95E-11+DCJSW_N18'   MJSW     = 0.538                PBSW     = 1
++CJSWG    = '4.18E-10+DCJSWG_N18'  MJSWG    = 0.538                PBSWG    = 1
++TCJ      = 8.42E-04               TCJSW    = 6.69E-04             TCJSWG   = 6.69E-04
++TPB      = 1.47E-03               TPBSW    = 8.68E-04             TPBSWG   = 8.68E-04
++JS       = 3.52E-07               JSW      = 3.0E-13              NJ       = 1.0392
++XTI      = 3.25                   NQSMOD   = 0                    ELM      = 5
++CGDO     = '3.70E-10+DCGDO_N18'   CGSO     = '3.70E-10+DCGSO_N18' TLEVC    = 1
++CAPMOD   = 3                      XPART    = 1                    CF       = 0.00
++ACDE     = 0.64                   MOIN     = 24                   NOFF     = 1.2025
++DLC      = 8.5E-09                DWC      = 4.5E-08
+*
+***********************************************************************************
+*                              1.8V CORE PMOS MODEL                               *
+***********************************************************************************
+*
+.model P018 pmos
++LEVEL    = 49
+*
+* GENERAL PARAMETERS
+*
++CALCACM  = 1
++LMIN     = 1.5E-7              LMAX     = 1.0E-5              WMIN     = 1.9E-7
++WMAX     = 1.0E-4              TNOM     = 25.0                VERSION  = 3.24
++TOX      = '3.74E-09+DTOX_P18' TOXM     = 3.74E-09            XJ       = 1.7000001E-07
++NCH      = 5.5000000E+17       LLN      = 1.0000000           LWN      = 1.0000000
++WLN      = 1.0450000           WWN      = 1.0000000           LINT     = 1.0000000E-08
++LL       = 3.4000000E-15       LW       = -3.3600000E-16      LWL      = 0.00
++WINT     = 8.0000010E-09       WL       = 3.5904200E-15       WW       = -1.8999999E-15
++WWL      = -1.1205000E-21      MOBMOD   = 1                   BINUNIT  = 2
++XL       = '-5.7E-09+DXL_P18'  XW       = '0.00+DXW_P18'      DWG      = -1.7361970E-08
++DWB      = 2.0000000E-08
+* DIODE PARAMETERS
++ACM      = 12                  LDIF     = 7.00E-08            HDIF     = 2.00E-07
++RSH      = 7.83                RD       = 0                   RS       = 0
++RSC      = 1.5                 RDC      = 1.5
+*
+* THRESHOLD VOLTAGE PARAMETERS
+*
++VTH0     = '-0.402+DVTH_P18'   WVTH0    = 1.2675420E-08       PVTH0    = '-1.2500000E-15+DPVTH0_P18'
++K1       = 0.5872390           LK1      = 3.5532110E-09       K2       = 7.0906860E-03
++K3       = 2.5999999           DVT0     = 0.7194931           DVT1     = 0.2467441
++DVT2     = 7.8089680E-02       DVT0W    = 0.00                DVT1W    = 8.0000000E+05
++DVT2W    = 0.00                NLX      = 9.0000000E-08       W0       = 0.00
++K3B      = 2.4862001           NGATE    = 3.1680000E+20
+*
+* MOBILITY PARAMETERS
+*
++VSAT     = 1.0000000E+05       UA       = 2.8500000E-10       LUA      = 5.5000000E-18
++PUA      = -2.0000000E-24      UB       = 1.0000000E-18       UC       = -4.7700000E-11
++WUC      = 3.1668000E-17       PUC      = -2.5000000E-24      RDSW     = 4.5500000E+02
++PRWB     = -0.4000000          PRWG     = 0.00                WR       = 1.0000000
++U0       = 8.6610000E-03       LU0      = -2.0000000E-11      WU0      = 1.3815350E-10
++A0       = 1.0000000           KETA     = 2.0000000E-02       LKETA    = -8.5000000E-09
++PKETA    = 5.0000000E-16       A1       = 0.00                A2       = 0.9900000
++AGS      = 0.2000000           B0       = 6.3000000E-08       B1       = 0.00
+*
+* SUBTHRESHOLD CURRENT PARAMETERS
+*
++VOFF     = -9.5000000E-02      LVOFF    = -1.7000000E-09      WVOFF    = -1.9999999E-09
++PVOFF    = -1.0000000E-16      NFACTOR  = 0.9000000           LNFACTOR = 1.0000000E-07
++PNFACTOR = -5.0000000E-15      CIT      = 0.00                CDSC     = 0.00
++CDSCB    = 0.00                CDSCD    = 0.00                ETA0     = 4.0000000E-02
++ETAB     = -2.5000000E-02      DSUB     = 0.5600000
+*
+* ROUT PARAMETERS
+*
++PCLM     = 0.7000000           PDIBLC1  = 0.00                PDIBLC2  = 7.0000000E-03
++PDIBLCB  = 0.00                DROUT    = 0.5600000           PSCBE1   = 4.0000000E+08
++PSCBE2   = 1.0000000E-07       PVAG     = 0.00                DELTA    = 1.0000000E-02
++ALPHA0   = 7.0000000E-08       ALPHA1   = 7.0491700           BETA0    = 22.8424000
++LBETA0   = -7.5000000E-08
+*
+* TEMPERATURE EFFECTS PARAMETERS
+*
++KT1      = -0.2577007          KT2      = -3.0979900E-02      LKT2     = -3.0000000E-09
++PKT2     = -6.5331750E-16      AT       = 1.0000000E+04       PAT      = -1.0000000E-09
++UTE      = -1.2703574          UA1      = 5.3866300E-10       WUA1     = 1.1000000E-16
++PUA1     = -2.3700001E-24      UB1      = -2.0709999E-18      UC1      = 2.0609721E-11
++KT1L     = -8.0000000E-09      PRT      = 90.0000000
+*
+* NOISE PARAMETERS
+*
++NOIMOD   = 2                   NOIA     = 3.3617E+18            NOIB     = 1.9536E+05
++NOIC     = 5.2658E-12          EM       = 6.2548E+07            EF       = 1.1307E+00
+*
+* CAPACITANCE PARAMETERS
+*
++CJ       = '0.00107+DCJ_P18'       MJ       = 0.415                 PB       = 0.817
++CJSW     = '9.89E-11+DCJSW_P18'    MJSW     = 0.489                 PBSW     = 1
++CJSWG    = '5.07E-10+DCJSWG_P18'   MJSWG    = 0.489                 PBSWG    = 1
++TPB      = 0.00153                 TPBSW    = 0.00117               TPBSWG   = 0.00117
++TCJ      = 0.000876                TCJSW    = 0.000745              TCJSWG   = 0.000745
++JS       = 1.66E-07                JSW      = 1.2E-13               NJ       = 1.0384
++XTI      = 4.5                     NQSMOD   = 0                     ELM      = 5
++CGDO     = '4.20E-10+DCGDO_P18'    CGSO     = '4.20E-10+DCGSO_P18'  TLEVC    = 1
++CAPMOD   = 3                       XPART    = 1                     CF       = 0.00
++ACDE     = 0.8505076               MOIN     = 14.95341              NOFF     = 1.431824
++DLC      = -1.5E-09

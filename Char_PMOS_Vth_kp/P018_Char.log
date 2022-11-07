@@ -1,0 +1,38 @@
+Circuit: * C:\Users\nutch\MEGA\_Studying\Intern Work\LT_Simulation\Char_PMOS_Vth_kp\P018_Char.asc
+
+Ignoring BSIM parameter CALCACM
+Ignoring BSIM parameter XL
+Ignoring BSIM parameter XW
+Ignoring BSIM parameter ACM
+Ignoring BSIM parameter LDIF
+Ignoring BSIM parameter HDIF
+Ignoring BSIM parameter TLEVC
+Error on line 91 : .model p018 pmos level = 49 calcacm = 1 lmin = 1.5e-7 lmax = 1.0e-5 wmin = 1.9e-7 wmax = 1.0e-4 tnom = 25.0 version = 3.24 tox =  3.74e-009  toxm = 3.74e-09 xj = 1.7000001e-07 nch = 5.5000000e+17 lln = 1.0000000 lwn = 1.0000000 wln = 1.0450000 wwn = 1.0000000 lint = 1.0000000e-08 ll = 3.4000000e-15 lw = -3.3600000e-16 lwl = 0.00 wint = 8.0000010e-09 wl = 3.5904200e-15 ww = -1.8999999e-15 wwl = -1.1205000e-21 mobmod = 1 binunit = 2 xl =  -5.7e-009  xw =  0  dwg = -1.7361970e-08 dwb = 2.0000000e-08 acm = 12 ldif = 7.00e-08 hdif = 2.00e-07 rsh = 7.83 rd = 0 rs = 0 rsc = 1.5 rdc = 1.5 vth0 =  -0.402  wvth0 = 1.2675420e-08 pvth0 =  -1.25e-015  k1 = 0.5872390 lk1 = 3.5532110e-09 k2 = 7.0906860e-03 k3 = 2.5999999 dvt0 = 0.7194931 dvt1 = 0.2467441 dvt2 = 7.8089680e-02 dvt0w = 0.00 dvt1w = 8.0000000e+05 dvt2w = 0.00 nlx = 9.0000000e-08 w0 = 0.00 k3b = 2.4862001 ngate = 3.1680000e+20 vsat = 1.0000000e+05 ua = 2.8500000e-10 lua = 5.5000000e-18 pua = -2.0000000e-24 ub = 1.0000000e-18 uc = -4.7700000e-11 wuc = 3.1668000e-17 puc = -2.5000000e-24 rdsw = 4.5500000e+02 prwb = -0.4000000 prwg = 0.00 wr = 1.0000000 u0 = 8.6610000e-03 lu0 = -2.0000000e-11 wu0 = 1.3815350e-10 a0 = 1.0000000 keta = 2.0000000e-02 lketa = -8.5000000e-09 pketa = 5.0000000e-16 a1 = 0.00 a2 = 0.9900000 ags = 0.2000000 b0 = 6.3000000e-08 b1 = 0.00 voff = -9.5000000e-02 lvoff = -1.7000000e-09 wvoff = -1.9999999e-09 pvoff = -1.0000000e-16 nfactor = 0.9000000 lnfactor = 1.0000000e-07 pnfactor = -5.0000000e-15 cit = 0.00 cdsc = 0.00 cdscb = 0.00 cdscd = 0.00 eta0 = 4.0000000e-02 etab = -2.5000000e-02 dsub = 0.5600000 pclm = 0.7000000 pdiblc1 = 0.00 pdiblc2 = 7.0000000e-03 pdiblcb = 0.00 drout = 0.5600000 pscbe1 = 4.0000000e+08 pscbe2 = 1.0000000e-07 pvag = 0.00 delta = 1.0000000e-02 alpha0 = 7.0000000e-08 alpha1 = 7.0491700 beta0 = 22.8424000 lbeta0 = -7.5000000e-08 kt1 = -0.2577007 kt2 = -3.0979900e-02 lkt2 = -3.0000000e-09 pkt2 = -6.5331750e-16 at = 1.0000000e+04 pat = -1.0000000e-09 ute = -1.2703574 ua1 = 5.3866300e-10 wua1 = 1.1000000e-16 pua1 = -2.3700001e-24 ub1 = -2.0709999e-18 uc1 = 2.0609721e-11 kt1l = -8.0000000e-09 prt = 90.0000000 noimod = 2 noia = 3.3617e+18 noib = 1.9536e+05 noic = 5.2658e-12 em = 6.2548e+07 ef = 1.1307e+00 cj =  0.00107  mj = 0.415 pb = 0.817 cjsw =  9.89e-011  mjsw = 0.489 pbsw = 1 cjswg =  5.07e-010  mjswg = 0.489 pbswg = 1 tpb = 0.00153 tpbsw = 0.00117 tpbswg = 0.00117 tcj = 0.000876 tcjsw = 0.000745 tcjswg = 0.000745 js = 1.66e-07 jsw = 1.2e-13 nj = 1.0384 xti = 4.5 nqsmod = 0 elm = 5 cgdo =  4.2e-010  cgso =  4.2e-010  tlevc = 1 capmod = 3 xpart = 1 cf = 0.00 acde = 0.8505076 moin = 14.95341 noff = 1.431824 dlc = -1.5e-09
+	* Unrecognized parameter "rsc" -- ignored
+	* Unrecognized parameter "rdc" -- ignored
+Warning: LTspice supports BSIM3 version 3.3.0. Your model specified an unrecognized version: 3.24
+Warning: Pd = 0 is less than W.
+Warning: Ps = 0 is less than W.
+.step x=1e-005
+.step x=2e-005
+.step x=3e-005
+.step x=4e-005
+.step x=5e-005
+
+Date: Mon Nov 07 23:35:04 2022
+Total elapsed time: 0.112 seconds.
+
+tnom = 27
+temp = 27
+method = trap
+totiter = 3004
+traniter = 0
+tranpoints = 0
+accept = 0
+rejected = 0
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1:       8 opcodes  0.1/[0.0]/0.0
+Matrix Compiler2: off  [0.0]/0.0/0.0
+

@@ -1,0 +1,15 @@
+* TT corner
+.PARAM
+*1.8V core NMOS
++DTOX_N18      = 0            DXL_N18       = 0            DXW_N18       = 0
++DVTH_N18      = 0            DCJ_N18       = 0            DCJSW_N18     = 0
++DCJSWG_N18    = 0            DCGDO_N18     = 0            DCGSO_N18     = 0
++DPVTH0_N18    = 0
+*1.8V core PMOS
++DTOX_P18      = 0            DXL_P18       = 0            DXW_P18       = 0
++DVTH_P18      = 0            DCJ_P18       = 0            DCJSW_P18     = 0
++DCJSWG_P18    = 0            DCGDO_P18     = 0            DCGSO_P18     = 0
++DPVTH0_P18    = 0
+.INC 'cmos018.mdl'
+
+

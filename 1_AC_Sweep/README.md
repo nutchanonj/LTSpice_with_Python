@@ -2,6 +2,8 @@
 
 This tool evaluates the DC gain, crossover frequency and phase margin of an op-amp open-loop gain at various input and output DC voltage with variation of supply voltage, temperature and process corner of CMOS.
 
+You can run the only single python code to automate this. You don't need to edit nor open LTSpice files.
+
 The simulation needs to be conducted as follow:
 
 - on each 3 process corners (FF, TT, SS).
@@ -18,15 +20,19 @@ Thus, there are 171 experiments to run.
 
 The output csv files will contain DC gain, crossover frequency and phase margin of an op-amp open-loop gain at various input and output DC voltage. The file names are indicated by:
 
-`SIM_ac_sweep_{Vin/Vout}_{corner}_{Vsupply}_{Vin_value/Vout_value}_{temp}`
+`SIM_ac_sweep_{Vin/Vout}_{corner}_{Vsupply}_{Vin_value/Vout_value}_{temp}_{cross_freq/dc_gain/phase_margin}`
 
 Where
 
-- Vin/Vout: indicates whether Vin or Vout is a variated parameter. 
-- corner: process corner (SS, TT, FF.)
-- Vsupply: supply voltage (1.1 V or 1.8 V.)
-- Vin_value/Vout_value: The value of V_in or V_out in that experiment. Depend on which is a variated parameter in that experiment.
-- temp: temperature in Celsius.
+- `Vin/Vout`: indicates whether Vin or Vout is a variated parameter. 
+- `corner`: process corner (SS, TT, FF.)
+- `Vsupply`: supply voltage (1.1 V or 1.8 V.)
+- `Vin_value/Vout_value`: The value of V_in or V_out in that experiment. Depend on which is a variated parameter in that experiment.
+- `temp`: temperature in Celsius.
+- `cross_freq/dc_gain/phase_margin`: indicates which type of quantities is export.
+    - `cross_freq`: crossover frequency, its unit is MHz.
+    - `dc_gain`: dc gain, its unit is dB.
+    - `phase_margin`: phase margin, its unit is degree.
 
 The csv rows and columns will be arranged like this:
 

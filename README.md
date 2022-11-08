@@ -3,9 +3,9 @@ LTSpice with hand calculations is not enough, so Python come for the rescue!
 
 NOTE: This repository's author gratefully wants to thank [Nuno Brum](https://github.com/nunobrum) for his library of [PyLTSpice](https://github.com/nunobrum/PyLTSpice). Without his great work, this project would not become possible.
 
-## Char_NMOS/PMOS_Vth_kn
+## Char_NMOS/PMOS_Vth_kn/kp
 
-The tool for finding the threshold voltage (V_th) and the transconductance (k_n) of an NMOS/PMOS. (The k_n found does not account for the Early effect, so if you want it to be more accurate, the k_n must be divided by (1 + lambda*V_ds) where lambda = 1/V_A.)
+The tool for finding the threshold voltage (V_th) and the transconductance (k_n/k_p) of an NMOS/PMOS. (The k_n/k_p found does not account for the Early effect, so if you want it to be more accurate, the k_n must be divided by (1 + lambda*V_ds) where lambda = 1/V_A.)
 
 ## Char_NMOS/PMOS_VA
 
